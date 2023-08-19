@@ -7,7 +7,6 @@ function App() {
   useEffect(()=>{
     axios.get('https://jsonmock.hackerrank.com/api/football_matches?page=120').then((res)=>{
       setData(res.data);
-      console.log(res.data);
     }).catch((err)=>{
         console.log(err);
     })
